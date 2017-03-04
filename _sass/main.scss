@@ -207,20 +207,17 @@ a.next {
 
 .footnotes {
 	font-size: .8em;
-}
-.footnotes hr {
-  border: none;
-  border-top: 2px solid rgba(0,0,0,.1);
+	line-height: 1.5;
   margin: 3em 0 0;
-  width: 33.33333%;
+  &:before {
+    content: '';
+    display: block;
+    border: none;
+    border-top: 2px solid rgba(0,0,0,.1);
+    width: 33.33333%;
+  }
 }
 
-.footnote-content {
-  font-size: .8em;
-}
-.footnote-content p {
-  line-height: 1.5;
-}
 
 /* Bigger Screens */
 
