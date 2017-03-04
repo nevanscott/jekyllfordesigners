@@ -11,7 +11,7 @@ $ gem install jekyll
 
 From here, we're going to start from scratch[^quickstart] making a new little Jekyll website. In it's simplest form, Jekyll will just take the files that you write and copy the into your generated site.
 
-# 1. Make a directory for your Jekyll project, and start the Jekyll server.
+## 1. Make a directory for your Jekyll project, and start the Jekyll server.
   
 ```bash
 ~ $ mkdir mysite
@@ -33,13 +33,13 @@ Configuration file: none
   Server running... press ctrl-c to stop.
 ```
 
-# 2. Let's add a simple file. Make a file in the `mysite` folder called `index.html` and put in the following:
+## 2. Let's add a simple file. Make a file in the `mysite` folder called `index.html` and put in the following:
     
 ```html
 <h1>Hello World!</h1>
 ```
 
-# 3. Make sure the server is still running in the Terminal, and then browse to the address listed there -- most likely `http://127.0.0.1:4000/`, as above.
+## 3. Make sure the server is still running in the Terminal, and then browse to the address listed there -- most likely `http://127.0.0.1:4000/`, as above.
     
 Not very interesting, I admit, but it's a start!
 
