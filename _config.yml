@@ -8,3 +8,5 @@ defaults:
       path: ""
     values:
       layout: "default"
+kramdown:
+  footnote_backlink: "&#8617;&#xFE0E;"
