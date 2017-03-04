@@ -1,17 +1,23 @@
 ---
 layout: template
 ---
-{% for i in site.notes %}
+{% for i in site.data.toc %}
+  {% assign slug = i | prepend:'/' | append:'/' %}
+	{% for page in site.pages %}
+	  {% if page.url == slug %}
+	    {% assign loop_page = page %}
+	  {% endif %}
+	{% endfor %}
 	{% if c %}
 		{% unless n %}
-			{% assign n = i %}
+			{% assign n = loop_page %}
 		{% endunless %}
 	{% endif %}
-	{% if i.url == page.url %}
-		{% assign c = i %}
+	{% if loop_page.url == page.url %}
+		{% assign c = loop_page %}
 	{% endif %}
 	{% unless c %}
-		{% assign p = i %}
+		{% assign p = loop_page %}
 	{% endunless %}
 {% endfor %}
 <article>
