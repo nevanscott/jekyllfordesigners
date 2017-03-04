@@ -156,10 +156,11 @@ pre code {
 }
 
 .highlight {
-	border: 1px solid rgba(0,0,0,.125);
-	background: #F3F3F3;
-	padding: 0 1em;
-	border-radius: 5px;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.15);
+	border-top: 1px solid rgba(0,0,0,.15);
+	background: rgba(0,0,0,.02);
+	padding: .5em 1em;
 	margin: 1em 0;
 }
 
