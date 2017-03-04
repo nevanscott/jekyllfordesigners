@@ -1,7 +1,5 @@
 ---
-layout: notes
 title: Welcome
-permalink: /
 ---
 
 {% include toc.html %}

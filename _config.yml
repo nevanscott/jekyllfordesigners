@@ -2,3 +2,9 @@ permalink: /:title/
 relative_permalinks: false
 markdown: kramdown
 future: false
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"

@@ -1,6 +1,5 @@
 ---
 title: Structured Content
-permalink: /structured-content/
 ex:
   title: Excavation
   subtitle: A Memoir

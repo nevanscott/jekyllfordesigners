@@ -1,6 +1,5 @@
 ---
 title: Getting Started
-permalink: /getting-started/
 ---
 
 Assuming you're running a relatively recent version of Mac OS X, you should be able to get up and running with just the following command in the Terminal:
