@@ -1,5 +1,6 @@
+$serif:   Chronicle, Charter, Georgia, serif;
 $sans:		'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Avenir, Noto, sans-serif;
-$lh:			1.7;
+$lh:			1.45;
 
 $brand:		hsl(40, 15%, 95%);
 
@@ -9,7 +10,7 @@ html {
 	min-height: 100%;
 }
 body {
-	font-family: $sans;
+	font-family: $serif;
 	font-size: 87.5%;
 	line-height: $lh;
 	padding: 0;
@@ -35,20 +36,22 @@ a:hover, a:focus, a:active {
 }
 
 h1, h2, h3 {
-	font-family: 'Whitney SSm A', 'Whitney SSm B', sans-serif;
+	font-family: $sans;
 }
 
 h1 {
-	font-weight: normal;
+	font-weight: bold;
 	border-bottom: 1px solid darken($brand, 5%);
-	font-size: 1.75em;
+	font-size: 1.5em;
 }
 h1 small {
 	float: right;
 	margin-top: .3em;
 }
 h2 {
-	margin-top: 1em * $lh;
+  font-size: 1.1em;
+  font-weight: bold;
+	margin-top: 2em * $lh;
 }
 h3 {
 	margin-top: 1.25em * $lh;
@@ -244,6 +247,7 @@ a.next {
 }
 
 .footnotes {
+  font-family: $sans;
 	font-size: .8em;
   margin: 3em 0 0;
   &:before {
@@ -256,6 +260,7 @@ a.next {
 }
 
 .footnote-content {
+  font-family: $sans;
   font-size: .8em;
 }
 .footnote-content p {
@@ -266,7 +271,7 @@ a.next {
 
 @media screen and (min-width: 30em) {
 	body {
-	  font-size: 100%;
+	  font-size: 125%;
 	}
 	.calendar {
 	  font-size: .75em;
