@@ -1,6 +1,7 @@
 ---
 title: Template Test
 permalink: /testing/
+published: false
 ex:
   title: Excavation
   subtitle: A Memoir
