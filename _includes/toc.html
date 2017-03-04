@@ -1,12 +1,18 @@
 <ol>
-{% for p in site.notes %}
+{% for s in site.data.toc %}
+  {% assign slug = s | prepend:'/' | append:'/' %}
+	{% for page in site.pages %}
+	  {% if page.url == slug %}
+	    {% assign p = page %}
+	  {% endif %}
+	{% endfor %}
 	{% if p.url == page.url %}
 		{% assign c = "current" %}
 	{% else %}
 		{% assign c = "" %}
 	{% endif %}
-	{% unless p.disabled %}
+	{% if p %}
 	<li class="{{ c }}"><a href="{{ p.url }}">{{ p.title }}</a></li>
-	{% endunless %}
+	{% endif %}
 {% endfor %}
 </ol>
