@@ -1,0 +1,51 @@
+---
+title: Test Steps
+permalink: /test/
+steps:
+  -
+    html: |
+      <h1>This is just a test.</h1>
+    css: |
+      body {
+        background: gray;
+      }
+    notes: |
+      This is a simple note, just for testing purposes.
+  -
+    html: |
+      <h1>Making a change</h1>
+    css: |
+      body {
+        background: gray;
+      }
+    notes: |
+      Did a change happen? I think so...
+---
+
+{% for step in page.steps %}
+
+<h1>Step {{ forloop.index }}</h1>
+
+{% capture html %}
+```html
+{{ step.html }}
+```
+{% endcapture %}
+
+{% capture css %}
+```css
+{{ step.css }}
+```
+{% endcapture %}
+
+<h2>HTML</h2>
+
+{{ html | markdownify }}
+
+<h2>CSS</h2>
+
+{{ css | markdownify }}
+
+<iframe id="output{{ forloop.index }}"></iframe>
+
+{% endfor %}

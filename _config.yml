@@ -1,0 +1,33 @@
+permalink: /:title/
+relative_permalinks: false
+markdown: redcarpet
+future: false
+collections:
+  notes:
+    output: true
+    permalink: /:title/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: notes
+  -
+    scope:
+      path: notes
+    values:
+      layout: notes
+      permalink: /:title/
+  -
+    scope:
+      path: ""
+      type: notes
+    values:
+      layout: notes
+      section: notes
+redcarpet:
+  extensions:
+    - 'autolink'
+    - 'smart'
+    - 'hard_wrap'
+    - 'footnotes'

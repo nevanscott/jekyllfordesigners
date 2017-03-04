@@ -1,0 +1,14 @@
+main:
+  - HOME
+  - notes
+sidebar:
+  -
+    section: Setup
+    notes:
+      - installation
+      - configuration
+  -
+    section: TBD
+    notes:
+      - yaml-frontmatter
+      - liquid-templates

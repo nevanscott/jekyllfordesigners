@@ -1,0 +1,30 @@
+---
+layout: default
+---
+{% for i in site.notes %}
+	{% if c %}
+		{% unless n %}
+			{% assign n = i %}
+		{% endunless %}
+	{% endif %}
+	{% if i.url == page.url %}
+		{% assign c = i %}
+	{% endif %}
+	{% unless c %}
+		{% assign p = i %}
+	{% endunless %}
+{% endfor %}
+<article>
+	<h1>
+		{{ page.title | textilize | strip_html }}
+	</h1>
+	{{ content }}
+</article>
+
+{% if n %}<a class="next" href="{{ n.url }}"><strong>Continue Reading</strong> {{ n.title }}</a>{% endif %}
+
+{% comment %}
+<aside id="notes-nav">
+  {% include notes_list.html %}
+</aside>
+{% endcomment %}
