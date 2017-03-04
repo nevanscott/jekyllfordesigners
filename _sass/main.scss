@@ -35,6 +35,13 @@ a:hover, a:focus, a:active {
   text-decoration: none;
 }
 
+em, cite, i {
+  font-style: italic;
+}
+strong, b {
+  font-weight: bold;
+}
+
 h1, h2, h3 {
 	font-family: $sans;
 }
