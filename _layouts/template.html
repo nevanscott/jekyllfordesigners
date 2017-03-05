@@ -7,6 +7,9 @@
 	<meta name="robots" content="noindex">
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
 	<link rel="stylesheet" href="{{ site.baseurl }}/assets/js/bigfoot-js/styles/bigfoot-default.css">
+	{% if page.scss %}
+	<style>{{ page.scss | scssify }}</style>
+	{% endif %}
 	<script>window.onload = function(){ document.body.className += " loaded"; }</script>
 </head>
 <body>
