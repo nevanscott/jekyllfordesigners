@@ -233,3 +233,12 @@ $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Seg
 </figure>
 
 Isn't that fun?
+
+This pattern can be used for all kinds of repeated structures, such as:
+
+* Articles on a newspaper or magazine site
+* Comments on an article
+* Recent sales in a CRM
+* Users in a control panel
+* Lessons in an LMS
+ 
