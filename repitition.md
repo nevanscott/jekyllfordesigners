@@ -1,5 +1,5 @@
 ---
-title: Twitter
+title: Repeated Structures
 scss: |
   $brand: hsl(180, 15%, 95%);
   $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Avenir, Noto, sans-serif;
