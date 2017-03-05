@@ -1,5 +1,6 @@
 ---
 title: Introduction
+permalink: /
 ---
 
 I started using Jekyll for my own personal use because I had grown tired of the setups and migrations required for the CMS-backed setups that I had been using for my professional work making websites for clients. My personal needs were more limited than most of my clients, and above all I wanted something that could work well with my desire to experiment and make changes without losing a sense of what I'd tried in the past.

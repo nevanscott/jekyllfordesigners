@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Table of Contents
 ---
 
 {% include toc.html %}
