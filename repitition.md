@@ -41,7 +41,7 @@ scss: |
     z-index: 2;
   }
   figure {
-    cursor: pointer;
+    cursor: default;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
