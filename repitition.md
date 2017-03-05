@@ -158,6 +158,8 @@ $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Seg
   }
   .twitter_example_4 {
     clear: both;
+    margin-left: 6.25%;
+    margin-right: -12.5%;
     margin-top: 5vw;
   }
   .twitter_example_5 {
