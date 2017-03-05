@@ -104,7 +104,7 @@ tweets:
 {% raw %}{% endfor %}{% endraw %}
 ```
 
-Then we can have some fun playing around with different options:
+Then we can have some fun playing around with different options for how to present the information:
 
 {% capture scss %}
 $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Avenir, Noto, sans-serif;
