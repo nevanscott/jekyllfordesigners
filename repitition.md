@@ -16,7 +16,8 @@ scss: |
       margin: 1em 0 0;
     }
   }
-  .markup [title] {
+  .markup [title],
+  .markup_on_hover:hover [title] {
     outline: 1px solid red;
     position: relative;
     z-index: 1;
@@ -34,6 +35,19 @@ scss: |
       top: 0;
       z-index: 2;
     }
+  }
+  .markup_on_hover:hover {
+    position: relative;
+    z-index: 2;
+  }
+  figure {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 tweets:
   -
@@ -219,12 +233,12 @@ $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Seg
 
 <figure class="full twitter_examples">
 {% for i in (1..5) %}
-  <figure class="twitter_example twitter_example_{{i}}">
+  <figure class="twitter_example twitter_example_{{i}} markup_on_hover">
     {% for i in (1..5) %}
     {% for tweet in page.tweets %}
-    <article class="tweet">
-      <h1>{{ tweet.username }}</h1>
-      <p>{{ tweet.message }}</p>
+    <article class="tweet" title="Tweet">
+      <h1 title="User Name">{{ tweet.username }}</h1>
+      <p title="Message">{{ tweet.message }}</p>
     </article>
     {% endfor %}
     {% endfor %}
