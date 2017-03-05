@@ -109,13 +109,13 @@ Then we can have some fun playing around with different options for how to prese
 {% capture scss %}
 $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Avenir, Noto, sans-serif;
 .twitter_examples {
-  height: 60vh;
+  height: 40vw;
 }
 .twitter_example {
   background: white;
   box-shadow: 0 0 .25em rgba(0,0,0,.5);
-  font-size: smaller;
-  height: 60vh;
+  font-size: 1.4vw;
+  height: 40vw;
   margin: 0 -6.25% 0 0;
   overflow: hidden;
   padding: .5em;
