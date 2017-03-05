@@ -146,6 +146,24 @@ $sans: 'Whitney SSm A', 'Whitney SSm B', -apple-system, BlinkMacSystemFont, "Seg
 }
 .twitter_example_2, .twitter_example_4 { top: -4px; }
 .twitter_example_3 { top: -8px; }
+@media screen and (max-width: 55em) {
+  .twitter_examples {
+    height: 125vw;
+  }
+  .twitter_example {
+    font-size: 2.5vw;
+    height: 60vw;
+    width: 50%;
+    margin-right: -25%;
+  }
+  .twitter_example_4 {
+    clear: both;
+    margin-top: 5vw;
+  }
+  .twitter_example_5 {
+    margin-top: 5vw;
+  }
+}
 .twitter_example_1 {
   .tweet {
     h1 {
